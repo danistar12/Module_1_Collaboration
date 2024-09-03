@@ -3,10 +3,10 @@
 # 8/27/2024
 # This App will gather information about a student and 
 # decide if they are on the Dean's list or the honor roll
-import string
+
 while True:
     last_name=input("Please enter your last name or ZZZ to quit: ")
-    last_name=last_name.upper()         # onverts entry to all caps
+    last_name=last_name.upper()         # converts entry to all caps
 
     if last_name=='ZZZ':
         break                           # break out statement
@@ -17,7 +17,7 @@ while True:
 
     if gPa >= 3.5:
         print(f"\nCongratulations {first_name}!! You've made the Dean's List\n")
-    elif gPa < 3.5 and gPa >= 3.25:
+    elif gPa >= 3.25:
         print(f"\nGreat Job {first_name}! You've made Honor Roll!\n")
     else:
         print(f"\nKeep working at it {first_name}! You're on the right track\n")
