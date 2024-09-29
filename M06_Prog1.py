@@ -4,12 +4,12 @@ import random
 from datetime import datetime
 
 def print_time():
-    wait_time = random.uniform(0, 1)  # Wait for a random time between 0 and 1 seconds
+    wait_time = random.uniform(0, 1)  
     time.sleep(wait_time)
     print(f"Current time: {datetime.now()}")
 
 if __name__ == "__main__":
-    # Create three separate processes
+   
     process1 = multiprocessing.Process(target=print_time)
     process2 = multiprocessing.Process(target=print_time)
     process3 = multiprocessing.Process(target=print_time)
